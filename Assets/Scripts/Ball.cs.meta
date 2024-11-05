@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: d752b794d02acc140a98bc66401ada9f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - goal: {instanceID: 0}
+  - player1: {instanceID: 0}
+  - player2: {instanceID: 0}
+  - confetti_left: {instanceID: 0}
+  - confetti_right: {instanceID: 0}
+  - rightgoaltrigger: {instanceID: 0}
+  - leftgoaltrigger: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
