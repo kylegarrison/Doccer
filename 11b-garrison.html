@@ -1,0 +1,60 @@
+<body onload="start()">
+    <h2>Module 11 JS Data &amp Objects</h2>
+    <div><p id="display1"> Initial </p></div>
+    <script>
+        function start(){
+            htmlString = "here are some JS examples: ";
+            let x = "Hello";
+            let y = "World";
+            let z1 = x + " " + y;
+            let z2 = x + 9;
+            let z3 = 3+9;
+            
+            htmlString += '<p> Concatination with a "+"';
+            htmlString += '<br> 1a. String + String &rArr; ' + z1;
+            htmlString += '<br> 1b. String + Number &rArr; ' + z2;
+            htmlString += '<br> 1c. Number + Number &rArr; ' + z3;
+
+            htmlString += '<hr>';
+            const PI = 3.141592653589793;
+            htmlString += '<p> 2. Constants are defined by <b> const </b> &rArr;' + PI;
+
+            htmlString += ' <p> JS supports arrays!';
+            buildings = ['Hancock','LT','Donelly', 'Byrne'];
+            htmlString += '<br> 3a. Arrays[x] &rArr;' + buildings[1];
+            htmlString += '<br> 3b. Arrays.length &rArr; ' + buildings.length;
+
+            if (buildings.includes('Hancock')) {
+                htmlString += '<br> 4a. Does include Hancock';
+            }
+            else {
+                htmlString += '<br> 4a. Does NOT include Hancock';
+            }
+            if (buildings.includes('Empire')) {
+                htmlString += '<br> 4b. Does include Empire';
+            }
+            else {
+                htmlString += '<br> 4b. Does NOT include Empire';
+            }
+
+            let s1 = " This has outer double-quote strings with an inner '";
+            let s2 = 'This has outer single-quote strings wth an inner "';
+            htmlString += '<p> 5a. ' + s1;
+            htmlString += '<br> 5b. ' + s2;
+
+            htmlString += '<hr>';
+            htmlString += '<p> 6. Select a building ';
+            htmlString += ' <select> name="buildings">';
+            for (let i = 0; i < buildings.length; i++) {
+                htmlString += ' <option value="' + buildings[i] + '">' +
+                                                   buildings[i] + '</option>';
+            }
+            htmlString += '</select>';
+
+
+
+
+            document.getElementById('display1').innerHTML = htmlString;
+        }
+    </script>
+</body>
